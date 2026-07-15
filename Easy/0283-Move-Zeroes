@@ -14,7 +14,7 @@ The solution runs in O(n) time with O(1) extra space."
   Increment j.
 4.After completing the traversal, all non-zero elements are at the beginning, and all zeros automatically move to the end.
 
-## Solution
+##  Java Solution
 class Solution {
     public void moveZeroes(int[] nums) {
         int j = 0;
