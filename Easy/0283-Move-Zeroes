@@ -7,12 +7,12 @@ This keeps all non-zero elements in their original order while pushing zeros to 
 The solution runs in O(n) time with O(1) extra space."
 
 #Algorithm
-Initialize j = 0.
-Traverse the array using i.
-Whenever a non-zero element is found:
-Swap nums[i] with nums[j].
-Increment j.
-After completing the traversal, all non-zero elements are at the beginning, and all zeros automatically move to the end.
+1.Initialize j = 0.
+2.Traverse the array using i.
+3.Whenever a non-zero element is found:
+  Swap nums[i] with nums[j].
+  Increment j.
+4.After completing the traversal, all non-zero elements are at the beginning, and all zeros automatically move to the end.
 
 ## Solution
 class Solution {
