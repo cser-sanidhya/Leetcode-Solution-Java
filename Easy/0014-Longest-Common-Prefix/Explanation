@@ -1,0 +1,29 @@
+# 14. Longest Common Prefix
+
+## Approach
+1. Handle the edge case where the input array is empty or null by returning an empty string.
+2. Assume the first string is the common prefix.
+3. Iterate through the remaining strings in the array.
+4. While the current string does not start with the current prefix, remove the last character from the prefix using substring().
+5. If the prefix becomes empty, return an empty string since there is no common prefix.
+6. After checking all strings, return the remaining prefix.
+
+## Time Complexity
+- O(n × m)
+
+Where:
+- n = Number of strings
+- m = Length of the longest common prefix (or the shortest string in the worst case)
+
+In the worst case, each character of the prefix may be removed while comparing with every string.
+
+## Space Complexity
+- O(1)
+
+No extra data structures are used. Only a few variables are maintained.
+
+## Concepts
+- Strings
+- Prefix Matching
+- String Manipulation
+- Iteration
