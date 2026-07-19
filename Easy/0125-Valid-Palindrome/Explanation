@@ -1,0 +1,36 @@
+# 125. Valid Palindrome
+
+## Approach
+
+1. Use two pointers, one starting from the beginning and the other from the end of the string.
+2. Skip all characters that are not letters or digits.
+3. Convert both characters to lowercase before comparing them.
+4. If the characters are different, return false.
+5. If the characters are the same, move both pointers toward the center.
+6. Continue until the pointers meet or cross.
+7. If no mismatch is found, return true.
+
+## Time Complexity
+
+O(n)
+
+Where:
+
+*  n = Length of the input string.
+
+Each character is visited at most once while moving the two pointers.
+
+## Space Complexity
+
+O(1)
+
+No extra data structures are used. Only a few variables are maintained.
+
+## Concepts
+
+* Strings
+* Two Pointers
+* Character Manipulation
+* Case Conversion
+* Palindrome
+
