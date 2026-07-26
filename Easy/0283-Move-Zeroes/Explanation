@@ -1,1 +1,46 @@
+# 283. Move Zeroes
 
+## Approach
+1. Use the **Two Pointer** technique to move all non-zero elements to the beginning of the array.
+2. Initialize a pointer `j` at index `0`. It represents the position where the next non-zero element should be placed.
+3. Traverse the array using pointer `i`.
+4. If `nums[i]` is non-zero:
+   - Swap `nums[i]` with `nums[j]`.
+   - Increment `j`.
+5. Continue until the entire array is traversed.
+6. After the traversal, all non-zero elements are at the beginning in their original order, and all zeroes are automatically shifted to the end.
+
+This approach modifies the array in-place without using any extra array.
+
+## Algorithm
+1. Initialize:
+   - `j = 0`
+2. Traverse the array from index `0` to `nums.length - 1`.
+3. For each element:
+   - If `nums[i] != 0`:
+     - Swap `nums[i]` and `nums[j]`.
+     - Increment `j`.
+4. After the loop, the array is rearranged with all non-zero elements first and all zeroes at the end.
+
+## Time Complexity
+- Single traversal of the array: **O(n)**
+
+**Overall Time Complexity:**  
+**O(n)**
+
+where:
+- `n` = length of the input array.
+
+## Space Complexity
+- No extra data structures are used.
+- Only two pointers (`i`, `j`) and one temporary variable are maintained.
+
+**Overall Space Complexity:**  
+**O(1)**
+
+## Concepts
+- Arrays
+- Two Pointers
+- In-place Swapping
+- Array Manipulation
+- One-pass Traversal
