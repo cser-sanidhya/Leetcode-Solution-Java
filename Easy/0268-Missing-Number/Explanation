@@ -2,7 +2,7 @@
 
 I used the mathematical sum formula to solve this problem efficiently. 
 First, I calculated the expected sum of all numbers from 0 to n using the formula n × (n + 1) / 2,
-where n is the length of the array. This gives the sum if no number were missing.
+where n is the length of the array. This gives the sum if no number were missing...
 
 Next, I traversed the given array once and calculated the actual sum of all the elements present in the array.
 Since exactly one number is missing, the actual sum will always be smaller than the expected sum.
