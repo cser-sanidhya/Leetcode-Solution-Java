@@ -30,7 +30,7 @@ This works because the problem guarantees that the number of positive and negati
 - Single traversal of the array: **O(n)**
 
 **Overall Time Complexity:**  
-**O(n)**
+**O(n)
 
 where:
 - `n` = length of the input array.
