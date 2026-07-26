@@ -24,7 +24,7 @@ Each character is visited at most once while moving the two pointers.
 
 O(1)
 
-No extra data structures are used. Only a few variables are maintained.
+No extra data structures are used. Only a few variables are maintained...
 
 ## Concepts
 
