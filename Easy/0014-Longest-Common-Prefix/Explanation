@@ -15,7 +15,7 @@ Where:
 - n = Number of strings
 - m = Length of the longest common prefix (or the shortest string in the worst case)
 
-In the worst case, each character of the prefix may be removed while comparing with every string.
+In the worst case, each character of the prefix may be removed while comparing with every string...
 
 ## Space Complexity
 - O(1)
