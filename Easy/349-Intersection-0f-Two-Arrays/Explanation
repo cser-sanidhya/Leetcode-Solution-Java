@@ -21,7 +21,7 @@
    - If `nums1[i] < nums2[j]`, increment `i`.
    - Else if `nums1[i] > nums2[j]`, increment `j`.
    - Otherwise:
-     - If the current element is different from the last inserted element, store it in the result array.
+     - If the current element is different from the last inserted element, store it in the result array...
      - Increment both `i` and `j`.
 5. Return `Arrays.copyOf(result, k)` to remove unused elements.
 
