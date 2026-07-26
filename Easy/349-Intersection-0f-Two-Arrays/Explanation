@@ -1,0 +1,48 @@
+# 349. Intersection of Two Arrays
+
+## Approach
+1. Sort both arrays so that common elements can be found efficiently using the Two Pointer technique.
+2. Initialize two pointers (`i` for `nums1` and `j` for `nums2`) starting from the beginning of each array.
+3. Compare the elements at both pointers:
+   - If `nums1[i] < nums2[j]`, move `i` forward.
+   - If `nums1[i] > nums2[j]`, move `j` forward.
+   - If both elements are equal, add the element to the result array only if it is not already the last inserted element (to avoid duplicates), then move both pointers.
+4. Continue until one of the arrays is completely traversed.
+5. Return only the filled portion of the result array using `Arrays.copyOf()`.
+
+## Algorithm
+1. Sort `nums1` and `nums2`.
+2. Create a result array of size `min(nums1.length, nums2.length)`.
+3. Initialize three variables:
+   - `i` → Pointer for `nums1`
+   - `j` → Pointer for `nums2`
+   - `k` → Index for the result array
+4. While both pointers are within their array bounds:
+   - If `nums1[i] < nums2[j]`, increment `i`.
+   - Else if `nums1[i] > nums2[j]`, increment `j`.
+   - Otherwise:
+     - If the current element is different from the last inserted element, store it in the result array.
+     - Increment both `i` and `j`.
+5. Return `Arrays.copyOf(result, k)` to remove unused elements.
+
+## Time Complexity
+- Sorting `nums1`: **O(n log n)**
+- Sorting `nums2`: **O(m log m)**
+- Two Pointer Traversal: **O(n + m)**
+
+**Overall Time Complexity:**  
+**O(n log n + m log m)**
+
+where:
+- `n` = length of `nums1`
+- `m` = length of `nums2`
+
+## Space Complexity
+- Result array: **O(min(n, m))**
+- Auxiliary Space (excluding output): **O(1)**
+
+## Concepts
+- Arrays
+- Sorting
+- Two Pointers
+- Duplicate Handling
