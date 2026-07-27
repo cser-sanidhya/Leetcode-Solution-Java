@@ -48,7 +48,7 @@ where:
 - `n` = length of the input array.
 
 ## Space Complexity
-- The `HashMap` stores the frequency of prefix sums encountered during traversal.
+- The `HashMap` stores the frequency of prefix sums encountered during traversal...
 
 **Overall Space Complexity:**  
 **O(n)**
