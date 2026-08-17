@@ -147,7 +147,7 @@ The long-term goals of this repository are:
 - Prepare for technical interviews
 - Maintain a visible record of consistent learning
 
-This repository will continue to evolve as my skills improve.
+This repository will continue to evolve as my skills improve...
 
 ---
 
