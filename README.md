@@ -64,10 +64,11 @@ This process helps me understand not only what solution works, but also why it w
 - Intervals
 - Binary Search
 - Backtracking
+- Linked List
+
 
 ### Upcoming Topics
 
-- Linked List
 - Stack
 - Queue
 - Trees
