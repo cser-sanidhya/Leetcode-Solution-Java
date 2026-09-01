@@ -1,4 +1,4 @@
-# Minimum Moves to Clean a Classroom
+# 3568. Minimum Moves to Clean a Classroom
 
 ## Approach
 1. Model the classroom as a graph where:
