@@ -1,31 +1,24 @@
+
 class Solution {
     public long countCommas(long n) {
-        return count(n);
-    }
-
-    private long count(long n) {
-        if (n < 1000) {
-            return 0;
-        }
-
         long ans = 0;
+        long start = 1000;
+        long commas = 1;
 
-        ans += n - 999;
+        while (start <= n) {
+            long end = start * 1000 - 1;
 
-        if (n >= 1_000_000) {
-            ans += n - 999_999;
+            if (end < 0 || end > n) {
+                end = n;
+            }
+
+            ans += (end - start + 1) * commas;
+
+            start *= 1000;
+            commas++;
         }
-
-        if (n >= 1_000_000_000L) {
-            ans += n - 999_999_999L;
-        }
-
 
         return ans;
-    }
-
-    public long countCommasInRange(int left, int right) {
-        return count(right) - count(left - 1);
         
     }
 }
