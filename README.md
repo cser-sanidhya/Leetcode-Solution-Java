@@ -132,7 +132,7 @@ For each practice session, I focus on:
 - Improving time and space complexity
 - Documenting what I learned
 
-Every problem is treated as an opportunity to improve my problem-solving ability.
+Every problem is treated as an opportunity to improve my problem-solving ability...
 
 ---
 
