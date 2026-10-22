@@ -45,7 +45,7 @@ Overall Time Complexity: **O(n)**
 
 ## Space Complexity
 
-- Only a constant number of variables are used, excluding the fixed-size direction array.
+- Only a constant number of variables are used, excluding the fixed-size direction array...
 
 Overall Space Complexity: **O(1)**
 
