@@ -50,7 +50,7 @@ Overall Time Complexity: **O(m × n)**
 
 ## Space Complexity
 
-- The stack can store up to O(m × n) cells in the worst case...
+- The stack can store up to O(m × n) cells in the worst case..
 
 Overall Space Complexity: **O(m × n)**
 
