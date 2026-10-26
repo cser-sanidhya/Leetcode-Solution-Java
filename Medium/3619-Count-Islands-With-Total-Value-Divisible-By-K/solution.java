@@ -3,17 +3,15 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
         int count = 0;
-
         int[] dirs = {-1, 0, 1, 0, -1};
-        java.util.ArrayDeque<int[]> stack = new java.util.ArrayDeque<>();
-
+        ArrayDeque<int[]> stack = new ArrayDeque<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 0) {
                     continue;
                 }
-
                 long sum = 0;
+                sum += grid[i][j];
                 grid[i][j] = 0;
                 stack.push(new int[]{i, j});
 
@@ -21,7 +19,6 @@ class Solution {
                     int[] cell = stack.pop();
                     int r = cell[0];
                     int c = cell[1];
-                    sum += gridValue(r, c, grid);
 
                     for (int d = 0; d < 4; d++) {
                         int nr = r + dirs[d];
@@ -44,9 +41,5 @@ class Solution {
         }
 
         return count;
-    }
-
-    private long gridValue(int r, int c, int[][] grid) {
-        return 0;
     }
 }
