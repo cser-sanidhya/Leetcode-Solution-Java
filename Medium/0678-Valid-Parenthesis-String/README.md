@@ -23,7 +23,7 @@
      * `maxOpen++` assumes `'*'` acts as `'('`.
 7. If `maxOpen < 0`, there are more closing parentheses than can possibly be matched, so return `false`.
 8. `minOpen` cannot be negative because we can choose previous `'*'` characters to act as empty characters or opening parentheses.
-9. After processing the entire string, `minOpen == 0` means it is possible to balance all parentheses.
+9. After processing the entire string, `minOpen == 0` means it is possible to balance all parentheses....
 10. Return the result.
 
 ## Algorithm
