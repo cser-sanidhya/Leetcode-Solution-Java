@@ -58,7 +58,7 @@ For every task:
 time + tasks[i]
 ```
 
-Repeat until all tasks are assigned.
+Repeat until all tasks are assigned...
 
 ## Algorithm
 
